@@ -132,13 +132,15 @@ main::after{
 
 .column-left{
   width:20%;
-  height: 100px;
   float: left;
   background-color: white;
   overflow: hidden;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .header-column-left {
+
 }
 
 .header-column-left::after{
@@ -149,28 +151,48 @@ main::after{
 
 #icon{
   float: left;
-  width: 30%;
+  width: 20%;
 }
 
 #organic{
   float: left;
-  font-size: 20px;
-  width: 70%;
+  font-size: 30px;
+  width: 77%;
+  margin-left: 3%;
+}
+
+#text-left{
+  color: green;
+  float: left;
 }
 
 .column-middle{
   width: 50%;
-  height: 100px;
   float: left;
   margin: 0 5%;
+  padding: 15px;
+  border-radius: 10px;
   background-color: white;
+}
+
+#middle-title{
+  text-shadow: 3px 3px lightgrey;
+  margin-bottom: 20px;
 }
 
 .column-right{
   width:20%;
-  height: 100px;
   float: left;
+}
+
+.text-right{
+  border-radius: 10px;
+  margin-bottom: 30px;
   background-color: white;
+  padding: 10px;
+}
+.text-right-title{
+  margin-bottom: 20px;
 }
 
 footer{
