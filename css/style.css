@@ -1,15 +1,15 @@
 *{
   box-sizing: border-box;
-  border:1px solid black;
-  padding:5px;
+  /* border:1px solid black;
+  padding:5px; */
   margin:0;
 }
 body{
   background-image: url('../img/bg.png');
 }
 .container{
-  width: 90%;
-  margin: auto;
+  width: 97%;
+  margin: 25px auto 0 auto;
 }
 
 header{
@@ -19,7 +19,8 @@ header{
 .header-top{
   width: 100%;
   height: 221px;
-  background-color: yellow;
+  background-color: white;
+  padding: 12px;
 }
 
 .header-top-img{
@@ -28,14 +29,99 @@ header{
   background-image: url('../img/bgheader.jpg');
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
+.header-top-img-text{
+  text-align: center;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+#header-text-top{
+  font-family: arial;
+  font-size: 3em;
+  font-weight: 600;
+  text-decoration: none;
+  color:white;
+}
+#header-text-bottom{
+  font-family: arial;
+  font-size: 1.1em;
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color:rgba(255, 255, 255, .8);
+  margin-top:10px;
+}
+
+.header-bottom{
+  font-family: arial;
+  font-size: 9.18px;
+}
 nav{
   width: 100%;
   height: 48px;
-  background-color: red;
+  background-color: #59514c;
+  position: relative;
 }
 
+#nav-menu{
+  position: absolute;
+  left:50%;
+  transform: translatex(-50%);
+  height: 100%;
+}
+
+li{
+  display: inline-block;
+  border-left: 1px solid rgba(255, 255, 255, .1);
+  border-right: 1px solid rgba(0, 0, 0, .4);
+  float: left;
+}
+
+.a-menu{
+  float: left;
+  text-decoration: none;
+  color: rgba(255, 255, 255, .7);
+  text-shadow: 1px 1px black;
+  line-height: 48px;
+  padding:0 12px;
+  letter-spacing: 0.6px;
+}
+
+.hover-menu{
+  float: left;
+  text-decoration: none;
+  color: white;
+  line-height: 48px;
+  padding:0 12px;
+  letter-spacing: 0.6px;
+  background-color: #1f1b13;
+  display: none;
+}
+
+li:hover .a-menu{
+  display: none;
+}
+
+li:hover .hover-menu{
+  display: block;
+
+}
+#nav-menu-first{
+  border-left:none;
+}
+
+#nav-menu-last{
+  border-right: none;
+}
+
+main{
+  margin: 22px 0;
+}
 main::after{
   width: 100%;
   content:'';
@@ -45,12 +131,14 @@ main::after{
 
 .column-left{
   width:20%;
+  height: 100px;
   float: left;
   background-color: green;
 }
 
 .column-middle{
   width: 50%;
+  height: 100px;
   float: left;
   margin: 0 5%;
   background-color: green;
@@ -58,6 +146,7 @@ main::after{
 
 .column-right{
   width:20%;
+  height: 100px;
   float: left;
   background-color: green;
 }
