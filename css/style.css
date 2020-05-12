@@ -6,6 +6,7 @@
 }
 body{
   background-image: url('../img/bg.png');
+  font-family: arial;
 }
 .container{
   width: 97%;
@@ -133,7 +134,28 @@ main::after{
   width:20%;
   height: 100px;
   float: left;
-  background-color: green;
+  background-color: white;
+  overflow: hidden;
+}
+
+.header-column-left {
+}
+
+.header-column-left::after{
+  width: 100%;
+  content: '';
+  display: table;
+}
+
+#icon{
+  float: left;
+  width: 30%;
+}
+
+#organic{
+  float: left;
+  font-size: 20px;
+  width: 70%;
 }
 
 .column-middle{
@@ -141,18 +163,18 @@ main::after{
   height: 100px;
   float: left;
   margin: 0 5%;
-  background-color: green;
+  background-color: white;
 }
 
 .column-right{
   width:20%;
   height: 100px;
   float: left;
-  background-color: green;
+  background-color: white;
 }
 
 footer{
   width: 100%;
   height: 656px;
-  background-color: lightblue;
+  background-color: white;
 }
